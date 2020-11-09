@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head prefix="og: https://ogp.me/ns# ">
+
+	<!-- Required meta tags -->
+	<title>:: Floating label input field with bootstrap.::</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Floating label input field with bootstrap 5.0.0-alpha2 with proper validation." />
+	<meta name="keywords" content="Floating label input fields, Bootstrap floating label input, Floating label input with proper validation, " />
+	<meta name="theme-color" content="#0c5ca2">
+	<!--<meta name="theme-color" content="#0d123d">-->
+
+
+	<!-- Required og:image tags -->
+	<meta property="og:image" content="https://skwebs.github.io/bs-5apha2-floating-label-input-with-validation/assets/img/skwebs-logo.png">
+	<meta property="og:image:url" content="https://skwebs.github.io/bs-5apha2-floating-label-input-with-validation/assets/img/skwebs-logo.png">
+
+	<!-- Required favicon -->
+	<link rel="icon" type="image/png" href="https://skwebs.github.io/bs-5apha2-floating-label-input-with-validation/assets/img/skwebs-logo.png" sizes="16x16,32x32,64x64">
+
+
+	<!-- all css vendors file-->
+	<style type="text/css">body{visibility:hidden;}</style>
+	<link rel="stylesheet" href="./assets/vendors/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="./assets/vendors/bootstrap/5.0.0-alpha2/bootstrap.min.css" />
+	<link rel="stylesheet" href="./assets/vendors/bootstrap/5.0.0-alpha2/bs5a2-remove.css" />
+	<link rel="stylesheet" href="./assets/vendors/jquery-ui/1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" href="./assets/vendors/sweetalert2/10.6.1/sweetalert2.min.css" />
+	<link rel="stylesheet" href="./assets/vendors/cropperjs/1.5.9/cropper.min.css" />
+	<!-- all css file-->
+	<!-- general -->
+	<link rel="stylesheet" href="./assets/css/style.css?v0">
+	<link rel="stylesheet" href="./assets/css/preloader.css?v0" >
+	<link rel="stylesheet" href="./assets/css/process.css" >
+	<!-- layout -->
+	<link rel="stylesheet" href="./assets/css/layout/stk-ftr-in-btm.css?v0" />
+	<link rel="stylesheet" href="./assets/css/layout/nav.css?v0" >
+	<link rel="stylesheet" href="./assets/css/layout/sidebar.css?v0">
+	<!-- form -->
+	<link rel="stylesheet" href="./assets/css/form/bs5a2-floating-label.css?v0" />
+	<link rel="stylesheet" href="./assets/css/form/animated-msform.css?v0">
+	<link rel="stylesheet" href="./assets/css/form/userImg.css?v0">
+	<style type="text/css">
+	
+	html,body{width:100%;
+	min-height:100%;}
+	.cta {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), 50%), url("https://anshumemorial.in/test/m/assets/img/web/laptop1.jpg") fixed center 100%/cover
+	}
+	.progress {
+	display: none;
+	margin-bottom: 1rem;
+	}
+	
+	.alert {
+	display: none;
+	}
+	
+	</style>
+	</head>
+<body>
+<header>
+	<nav id="main__nav" class=" navbar navbar-expand-md fixed-top navbar-light bg-white py-0">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img class="animate__animated animate__animate__fadeInUp" src="./assets/img/cfcc-192x192-min.png">
+			</a>
+			<button class=" hamburger flat-box hamburger--arrowalt navbar-toggler" type="button" aria-controls="menuContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="hamburger-box"> 
+	               <span class="hamburger-inner"></span>
+				</span>
+			</button>
+
+			<div class="menuContent collapse navbar-collapse collapse navbar-collapse " id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"> <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"> Link 1</a>
+					</li>
+					<!--
+					<li class="nav-item">
+						<a class="nav-link" href="#"> Link 2 </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"> Link 3 </a>
+					</li>-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Menu</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Dropdown 1</a>
+							<a class="dropdown-item" href="#">Dropdown 2</a>
+							<a class="dropdown-item" href="#">Dropdown 3</a>
+						</div>
+					</li>
+					<li class="nav-item"> <a class="nav-link" href="#" disabled="disabled">Sitemap</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+    <main>
+
+	</main>
+	<footer class="bg-light text-muted">
+			<!-- copyright section -->
+			<section class="copyright my-auto py-4 text-center ">
+				&copy;
+				<script>
+					document.write(new Date().getFullYear())
+				</script>  Designed &amp; Developed by <a href="https://skwebs.github.io">SKWebs</a>
+			</section>
+			<!-- // copyright section -->
+		</footer>
+
+<!-- extra -->
+
+		<div class="preloader">
+			<img class="preloader__img" src="./assets/img/cfcc-192x192-min.png" alt="Children Future Coaching Logo">
+			<div class="rounder"></div>
+		</div>
+
+		<div class="sidebar-overlay"></div>
+		<section class="sidebar bg-light">
+			<div class="sidebar-header border-bottom px-2 py-3">
+
+				<div class="d-flex user_details" >
+					<img width="70" class="filter-gray opacity25 my-auto border border-secondary rounded-circle" style="border-radius:50%;"  src="./assets/img/cfcc-192x192-min.png" >
+					<div class="flex-grow-1 pl-2 text-muted ">
+						
+						<div class="user_text d-none" >
+							<div class="d-flex align-items-center" >
+								<a href="#" class="d-inline-block" >Login</a>
+							</div>
+						</div>
+						<div class="user_text" >
+							<div class="font-weight-bolder mb-1" >
+								Guest User						
+							</div>
+							<table>
+								<tr>
+									<td><h1><a class="btn btn-primary px-4 ml-2"  href="#" >Login User</a></h1></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+<!--
+				<div class="d-flex user_details" >
+					<img width="70" class="my-auto border border-secondary rounded-circle" style="border-radius:50%;"  src="https://cfcoaching.000webhostapp.com/compressed_img/1602596750-300x300.jpg" >
+					<div class="flex-grow-1 pl-2 text-muted ">
+						
+						<div class="user_text d-none" >
+							<div class="d-flex align-items-center" >
+								<a href="#" class="d-inline-block" >Login</a>
+							</div>
+						</div>
+						<div class="user_text" >
+							<div class="font-weight-bolder mb-1" >
+								Satish  Sharma						
+							</div>
+							<table>
+								<tr>
+									<td>Reg. No.</td><td>:&nbsp</td><td>1602596722 </td>
+								</tr>
+								<tr>
+									<td>Last Login</td><td>:&nbsp</td><td>2020-10-15 12:27:11</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+-->
+			</div>
+			<div class="clearfix"></div>
+			<div class="sidebar-menu">
+				<ul class="navbar"></ul>
+				<div class="sidebar-social d-flex justify-content-center"> 
+					<a class="sb-fb" href="https://facebook.com/AnshuMemorialAcademy">
+						<i class="fa fa-facebook"></i>
+					</a> 
+					<a class="sb-tw" href="https://mobile.twitter.com/AnshuMemorial">
+						<i class="fa fa-twitter"></i>
+					</a> 
+					<a class="sb-insta" href="https://www.instagram.com/anshumemorial/">
+						<i class="fa fa-instagram"></i>
+					</a> 
+					<a class="sb-yt" href="https://www.youtube.com/channel/UC-Y-AzTd9CCYbbUqAthmHVg">
+						<i class="fa fa-youtube"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+		
+
+
+		<!-- all vendors js file-->
+		<script src="./assets/vendors/jquery/3.5.1/jquery.min.js"></script>
+		<script src="./assets/vendors/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+		<script src="./assets/vendors/jquery-sticky/jquery.sticky.min.js"></script>
+		<script src="./assets/vendors/bootstrap/5.0.0-alpha2/bootstrap.bundle.min.js" ></script>
+		<script src="./assets/vendors/sweetalert2/10.6.1/sweetalert2.min.js" ></script>
+		<script src="./assets/vendors/cropperjs/1.5.9/cropper.min.js" ></script>
+		
+		<script defer src="./assets/js/app.js"></script>
+		
+		<script defer src="./assets/js/onload.js"></script>
+		<script defer src="./assets/js/sidebar.js?v2"></script>
+		<script type="text/javascript">
+		(function (){
+	//	$("body").css("padding-top", $("#main__nav").height()).css("visibility","visible");
+		})()
+		</script>
+	</body>
+</html>

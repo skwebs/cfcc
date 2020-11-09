@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head prefix="og: https://ogp.me/ns# ">
+
+	<!-- Required meta tags -->
+	<title>:: Floating label input field with bootstrap.::</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Floating label input field with bootstrap 5.0.0-alpha2 with proper validation." />
+	<meta name="keywords" content="Floating label input fields, Bootstrap floating label input, Floating label input with proper validation, " />
+	<meta name="theme-color" content="#0c5ca2">
+	<!--<meta name="theme-color" content="#0d123d">-->
+
+
+	<!-- Required og:image tags -->
+	<meta property="og:image" content="https://skwebs.github.io/bs-5apha2-floating-label-input-with-validation/assets/img/skwebs-logo.png">
+	<meta property="og:image:url" content="https://skwebs.github.io/bs-5apha2-floating-label-input-with-validation/assets/img/skwebs-logo.png">
+
+	<!-- Required favicon -->
+	<link rel="icon" type="image/png" href="https://skwebs.github.io/bs-5apha2-floating-label-input-with-validation/assets/img/skwebs-logo.png" sizes="16x16,32x32,64x64">
+
+
+	<!-- all css vendors file-->
+	
+	<link rel="stylesheet" href="./assets/vendors/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="./assets/vendors/bootstrap/5.0.0-alpha2/bootstrap.min.css" />
+	<link rel="stylesheet" href="./assets/vendors/bootstrap/5.0.0-alpha2/bs5a2-reset-sm.css" />
+	<link rel="stylesheet" href="./assets/vendors/jquery-ui/1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" href="./assets/vendors/sweetalert2/10.6.1/sweetalert2.min.css" />
+	<link rel="stylesheet" href="./assets/vendors/cropperjs/1.5.9/cropper.min.css" />
+	
+	<link rel="stylesheet" href="./assets/css/stk-ftr-in-btm.css" />
+	<link rel="stylesheet" href="./assets/css/bs5a2-floating-label.css" />
+	<link rel="stylesheet" href="./assets/css/animated-msform.css">
+	<!-- all page css -->
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="./">SKWebs</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./form-type-1.html">Type-1 Form</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./form-type-2.html">Type-2 Form</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/skwebs/bs5-multi-steps-form">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/skwebs/bs5-multi-steps-form/archive/master.zip">Download Code</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+<section class="msform-sec" >
+<!-- multistep form -->
+<div class="msform">
+	<!-- progressbar -->
+	<ul class="progressbar">
+		<li class="active">Name Section</li>
+		<li>Personal Details</li>
+		<li>Contact Details</li>
+		<li>Upload image</li>
+	</ul>
+	<form id="msform" class="form-float form-float-box" >
+	
+	<!-- .pages -->
+	<div class="page" >
+		<h2 class="fs-title">Enter Your Name</h2>
+		<h3 class="fs-subtitle">This is step 1</h3>
+<div class="form-group ">
+	<input name="first_name"  
+		id="first_name" 
+		type="text" 
+		class="inp form-control form-control-lg" 
+		data-field-name="First Name" 
+		title="Only alphabet characters are allowed. First Name must have minimum 3 characters, start with capital letter." 
+		data-toggle="tooltip" 
+		data-title="Only alphabet characters are allowed. <strong>First Name</strong> must have minimum 3 characters, start with capital letter." 
+		autofocus="autofocus" 
+		placeholder=" " 
+		required 
+		oninput="validateInp(this)" 
+	pattern="^[A-Z]{1}[a-z]{2,10}$" >
+	<label for="first_name" class="form_label">First Name</label>
+</div>
+
+<div class="form-group">
+	<input name="mid_name"  
+		id="mid_name" 
+		type="text" 
+		class="inp form-control form-control-lg" 
+		data-field-name="Middle Name" 
+		title="Only alphabet characters are allowed. Middle Name must have minimum 3 characters, start with capital letter." 
+		data-toggle="tooltip" 
+		data-title="Only alphabet characters are allowed. <strong>Middle Name</strong> must have minimum 3 characters, start with capital letter." 
+		placeholder=" " 
+		oninput="validateInp(this)" 
+	pattern="^(\s*|[A-Z]{1}[a-z]{2,10})$">
+	<label for="mid_name" class=" text-md-right">Middle Name</label>
+</div>
+	
+<div class="form-group">
+	<input name="last_name"  
+		id="last_name" 
+		type="text" 
+		class="inp form-control form-control-lg" 
+		data-field-name="Last Name" 
+		title="Only alphabet characters are allowed. Last Name must have minimum 3 characters, start with capital letter." 
+		data-toggle="tooltip" 
+		data-title="Only alphabet characters are allowed. <strong>Last Name</strong> must have minimum 3 characters, start with capital letter." 
+		placeholder=" " 
+		required 
+		oninput="validateInp(this)" 
+	pattern="^[A-Z]{1}[a-z]{2,10}$" >
+	<label for="last_name" class="">Last Name</label>
+</div>
+             
+		<input type="button" name="next" class="next btn btn-primary text-right" value="Next" />
+	</div>
+	<div class="page" >
+		<h2 class="fs-title">Personal Details</h2>
+		<h3 class="fs-subtitle">This is step 2</h3>
+<div class="form-group">
+	<select name="class" 
+		id="class"  
+		class="inp form-select form-select-lg" 
+		data-field-name="Class" 
+		title="Class is required field . Please select an option." 
+		data-title="<strong>Class</string> is required field . Please select an option." 
+		required 
+		onchange="validateInp(this)" 
+	pattern="[^\0]" >
+	
+	<option value=""></option>
+	<option value="10+" >10+</option>
+	<option value="10" >10th</option>
+	<option value="9" >9th</option>
+	<option value="8" >8th</option>
+	<option value="7" >7th</option>
+	<option value="6" >6th</option>
+	<option value="5" >5th</option>
+	<option value="4" >4th</option>
+	<option value="3" >3rd</option>
+	<option value="2" >2nd</option>
+	<option value="1" >1st</option>
+	</select>
+	<label for="class" class="">Class</label>
+</div>
+	
+<div class="form-group">
+	<select name="gender" 
+		id="class"  
+		class="inp form-select form-select-lg" 
+		data-field-name="Gender" 
+		title="Gender is required field . Please select an option." 
+		data-title="<strong>Gender</string> is required field . Please select an option." 
+		placeholder=" " 
+		required 
+		onchange="validateInp(this)" 
+	pattern="[^\0]" >
+	
+	<option value=""></option>
+	<option value="Female" >Female</option>
+	<option value="Male" >Male</option>
+	<option value="Other" >Other</option>
+	</select>
+	<label for="gender" class="">Gender</label>
+</div>
+	
+<div class="form-group">
+	<input name="dob"  
+		id="dob" 
+		type="text"  
+		class="inp form-control form-control-lg" 
+		data-field-name="Date of Birth" 
+		title="Date of birth is required field. Please select an option." 
+		data-title="Please must select your <strong>date of birth</strong>."  
+		placeholder=" "
+		required 
+		oninput="validateInp(this)" 
+		onchange="validateInp(this)" 
+	pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$" >
+	<label for="dob" class="">Date of Birth</label>
+</div>
+		<input type="button" name="previous" class="previous btn btn-secondary mr-2" value="Previous" />
+		<input type="button" name="next" class="next btn btn-primary ml-2" value="Next" />
+	</div>
+	<div class="page" >
+		<h2 class="fs-title">Contact Details</h2>
+		<h3 class="fs-subtitle">This is step 3</h3>
+<div class="form-group">
+	<input name="mobile" 
+		type="tel"  
+		data-toggle="tooltip" 
+		title="Only 10 digits mobile no. allowed that starts with 6,7,8 or,9." 
+		id="mobile" 
+		data-field-name="Mobile No." 
+		data-title="Only 10 digits <strong>mobile no.</strong> allowed that starts with 6,7,8 or,9." 
+		maxlength="10"  
+		class="inp form-control form-control-lg" 
+		placeholder=" " 
+		required
+		oninput="validateInp(this)" 
+	pattern="^[6-9]\d{9}$" >
+	<label for="mobile" class="">Mobile No.</label>
+</div>
+<div class="form-group">
+	<input type="text" 
+		id="father"  
+		data-toggle="tooltip" 
+		title="Only alphabet, space and dot(.) are allowed in father's name, Must start with capital letter." 
+		class="inp form-control form-control-lg" 
+		name="father" 
+		data-field-name="Father's Name" 
+		data-title="Only alphabet, space and dot(.) are allowed in <strong>father's name</strong>, Must start with capital letter." 
+		placeholder=" " 
+		required
+		oninput="validateInp(this)" 
+	pattern="^([A-Z][a-z]{2,}|[A-Z][a-z]*(\s|.\s|.|)[A-Z][a-z]{2,}|[A-Z][a-z]*(\s|.\s|.|)[A-Z][a-z]*(\s|.\s|.|)[A-Z][a-z]{2,})$" >
+	<label for="father_name" class="">Father's Name</label>
+</div>
+
+<div class="form-group">
+	<input type="text" 
+		id="present_address" 
+		name="present_address"  
+		data-field-name="Present Address" 
+		data-toggle="tooltip" 
+		data-title="Only alphanumeric, space and , . - + symbols are allowed in  <strong>present address</strong> field." 
+		class="inp form-control form-control-lg" 
+		title="Only alphanumeric, space and , . - + symbols are allowed in  present address field." 
+		placeholder=" " 
+		required
+		oninput="validateInp(this)" 
+	pattern="^[A-Z][a-zA-Z0-9\s,+-\.]+$" >
+	<label for="present_address" class="">Present Address</label>
+</div>
+		<input type="button" name="previous" class="previous btn btn-secondary mr-2" value="Previous" />
+		<input type="button" name="next" class="next btn btn-primary ml-2" value="Next" />
+	</div>
+
+<!-- page -->
+	<div class="page" >
+	<h2 class="fs-title">Upload Image</h2>
+	<h3 class="fs-subtitle">This is step 4</h3>
+	
+	<div class="userImgSec mx-auto mb-3" >
+		<img id="user-img" class="border"  src="./assets/img/wa-sq-user-img.png">
+	<input name="select-img" 
+		type="file"  
+		ata-toggle="tooltip" 
+		title="Select image." 
+		id="select-img" 
+		data-field-name="Image." 
+		data-title="Select image." 
+		class="inp visually-hidden" 
+		placeholder=" " 
+		required
+		onchange="validateInp(this)" 
+	attern="" >
+		<div class="userImgSec-toolBox" >
+			<button type="button" class="userImgSec-toolBtn select-image" ><i class="fa fa-camera" aria-hidden="true"></i><span>Select Image</span></button>
+			<button type="button" class="userImgSec-toolBtn" ><i class="fa fa-pencil mx-auto" aria-hidden="true"></i><span>Edit Image</span></button>
+		</div>
+	</div>
+		
+	<input type="button" name="previous" class="previous btn btn-secondary mr-2" value="Previous" />
+	<input type="submit" name="submit" class="submit btn btn-success ml-2" value="Submit" />
+	</div>
+	
+</form>
+</div>
+</section>
+	<a class="text-center d-block mt-3" href="animated-msform-ul.html" >BS5 Floating Label Underline Form</a>
+	</main>
+	<footer class="bg-light text-muted">
+			<!-- copyright section -->
+			<section class="copyright my-auto py-4 text-center ">
+				&copy;
+				<script>
+					document.write(new Date().getFullYear())
+				</script>  Designed &amp; Developed by <a href="https://skwebs.github.io">SKWebs</a>
+			</section>
+			<!-- // copyright section -->
+		</footer>
+
+<!-- extra -->
+<!-- Modal -->
+<div class="modal fade" id="cropImageModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-0 mx-auto">
+      <div class="modal-header bg-primary text-white rounded-0">
+        <h5 class="modal-title" id="cropImageModalLabel">Crop Image</h5>
+        <button type="button" class="btn-close btn-close-white" data-dismiss="modal" aria-label="Close" title="Close"  data-toggle="tooltip"></button>
+      </div>
+      <div class="modal-body">
+       <div class="cropBox mx-auto" >
+	       <img id="croppable-img" src="./assets/img/wa-sq-user-img.png">
+       </div>
+      </div>
+      <div class="modal-footer rounded-0 bg-light">
+        
+        
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" title="Close" data-toggle="tooltip"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <button data-tool="reset" type="button" class="btn btn-primary" title="Reset" data-toggle="tooltip"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+        <div class="btn-group" role="group">
+	        <button data-tool="flipX" id="flipX" type="button" class="tool btn btn-primary" title="Flip Horizontally" data-toggle="tooltip"><i class="fa fa-arrows-h" aria-hidden="true"></i></button>
+	        <button data-tool="flipY" id="flipY" type="button" class="tool btn btn-primary" title="Flip Vertically" data-toggle="tooltip"><i class="fa fa-arrows-v" aria-hidden="true"></i></button>
+        </div>
+        <div class="btn-group" role="group">
+	        <button data-tool="rotateLeft" id="rotateLeft" type="button" class="tool btn btn-primary" title="Rotate (-45)" data-toggle="tooltip"><i class="fa fa-undo" aria-hidden="true"></i></button>
+	        <button data-tool="rotateRight" id="rotateRight" type="button" class="tool btn btn-primary" title="Rotate (+45)" data-toggle="tooltip"><i class="fa fa-repeat" aria-hidden="true"></i></button>
+        </div>
+        <button id="cropBtn" type="button" class="btn btn-success" title="Crop Image" data-toggle="tooltip"><i class="fa fa-crop" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+		<!-- all vendors js file-->
+		<script src="./assets/vendors/jquery/3.5.1/jquery.min.js"></script>
+		<script src="./assets/vendors/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+		<script src="./assets/vendors/bootstrap/5.0.0-alpha2/bootstrap.bundle.min.js" ></script>
+		<script src="./assets/vendors/sweetalert2/10.6.1/sweetalert2.min.js" ></script>
+		<script src="./assets/vendors/cropperjs/1.5.9/cropper.min.js" ></script>
+		
+		<script defer src="./assets/js/app.js"></script>
+
+	</body>
+</html>
